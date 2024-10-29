@@ -1,0 +1,46 @@
+.logo_duoc {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: flex-start;  /* Alinea la imagen en la parte superior */
+    height: 200px;            /* Ajusta la altura del contenedor */
+    padding-top: 20px;        /* Añade espacio desde la parte superior */
+  }
+  
+.logo_duoc img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.qr_imagen {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente si es necesario */
+  height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+}
+
+.qr_imagen img {
+  width: 100%; /* Ajusta el ancho de la imagen para que ocupe el espacio disponible */
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  border: none; /* Elimina el borde */
+  box-shadow: none; /* Elimina cualquier sombra */
+}
+
+
+
+.volver-btn {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  --background: #007bff;
+  --color: #fff;
+}
+
+.estadoqr-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  --background: #007bff;
+  --color: #fff;
+}

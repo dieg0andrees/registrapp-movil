@@ -1,0 +1,22 @@
+<!-- reporteria-ri.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reporte de Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let alumno of alumnos">
+      <ion-label>
+        {{ alumno.nombre }} {{ alumno.apellido }} - {{ alumno.porcentajeAsistencia?.toFixed(2) ?? '0.00' }}%
+      </ion-label>
+      <ion-badge color="{{ (alumno.porcentajeAsistencia ?? 0) < 70 ? 'danger' : 'success' }}">
+        {{ (alumno.porcentajeAsistencia ?? 0) < 70 ? 'Bajo' : 'Adecuado' }}
+      </ion-badge>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="descargarPDF()">Descargar PDF</ion-button>
+  <ion-button expand="full" (click)="descargarExcel()">Descargar Excel</ion-button>
+  <ion-button (click)="volver()">Volver</ion-button>
+</ion-content>

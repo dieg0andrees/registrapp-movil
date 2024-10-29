@@ -1,0 +1,17 @@
+<!-- ver-asistencia.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alumnos de la Asignatura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let alumno of alumnos">
+      <ion-label>
+        {{ alumno.nombre }} {{ alumno.apellido }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="volver()">Volver</ion-button>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <!-- Encabezado -->
+  <div class="logo_duoc" style="text-align: center; margin-top: 20px;">
+    <img src="../../../assets/images/logo_duoc.png" alt="" style="max-width: 150px;">
+  </div>
+  <ion-list-header style="text-align: center; font-weight: bold; font-size: 1.2em; color: #3880ff;">
+    Asignaturas que Enseñas
+  </ion-list-header>
+
+  <!-- Tarjetas de asignaturas -->
+  <div *ngFor="let asignatura of asignaturas" class="asignatura-card">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button (click)="ver_asignaturas(asignatura.id)">
+          Ver Asistencia {{ asignatura.detalle }}
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Botón de volver -->
+  <ion-button class="volver-btn" expand="full" (click)="volver()">
+    Volver
+  </ion-button>
+</ion-content>

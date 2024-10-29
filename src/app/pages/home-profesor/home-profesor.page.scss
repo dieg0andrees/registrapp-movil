@@ -1,0 +1,109 @@
+/* Logo Duoc */
+.logo_duoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    padding-top: 20px;
+  }
+  
+  .logo_duoc img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Contenedor de temperatura centrado en una línea */
+  .temperature-container {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en línea horizontal */
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f8;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 320px; /* Aumenta el ancho para acomodar el texto */
+    margin: 0 auto; /* Centrado */
+    text-align: center;
+  
+    h2 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin: 0;
+      white-space: nowrap;
+    }
+  
+    .temperature-display {
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+  
+      .temperature-icon {
+        font-size: 1.2em;
+      }
+  
+      &.hot {
+        color: #e63946;
+      }
+  
+      &.cold {
+        color: #1d3557;
+      }
+  
+      &:not(.hot):not(.cold) {
+        color: #007bff;
+      }
+    }
+  
+    .loading {
+      font-size: 1.2em;
+      color: #888;
+    }
+  }
+  
+  
+ 
+  
+  
+  
+  /* Sección de bienvenida */
+  .bienvenido_profesor {
+    text-align: center;
+    margin-top: 20px;
+  
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 10px;
+  
+      .usuario_profesor {
+        color: #34495e;
+        font-weight: normal;
+      }
+    }
+  }
+  
+  /* Botones de acción */
+  .botones {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  
+    ion-button {
+      --background: rgb(9, 0, 138);
+      width: 80%;
+      max-width: 300px;
+      font-size: 18px;
+      
+      &:last-child {
+        --background: #e63946; /* Botón de cerrar sesión en rojo */
+        color: #fff;
+      }
+    }
+  }
+  

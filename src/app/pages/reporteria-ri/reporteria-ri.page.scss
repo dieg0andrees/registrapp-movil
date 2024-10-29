@@ -1,0 +1,85 @@
+.logo_duoc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.logo_duoc img {
+  max-width: 250px;
+  height: auto;
+}
+
+.asistencia-card.aprobado ion-card-content p {
+  color: green; /* Color verde para aprobado */
+}
+
+.asistencia-card.reprobado ion-card-content p {
+  color: red; /* Color rojo para reprobado */
+}
+
+.contenedor {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Espacio entre las tarjetas */
+}
+
+.izquierda {
+  flex: 3; /* La columna de nombres toma más espacio */
+}
+
+.derecha {
+  flex: 1; /* La columna de asistencia toma menos espacio */
+}
+
+.asignatura-card,
+.asistencia-card {
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px; 
+  text-align: center;
+}
+
+.botones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+
+.volver-btn {
+  align-self: center;
+  margin-top: 20px; /* Aumenta la distancia desde los otros botones */
+}
+
+.descargar-pdf-btn,
+.descargar-xls-btn {
+  position: absolute;
+  top: -50px;
+  width: 140px; /* Ajusta el ancho de los botones */
+}
+
+.descargar-pdf-btn {
+  left: 0px; /* Mueve el botón PDF más a la derecha */
+}
+
+.descargar-xls-btn {
+  right: 0px; /* Mueve el botón XLS más a la izquierda */
+}
+

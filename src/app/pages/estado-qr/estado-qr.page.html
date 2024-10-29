@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Estado del QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let alumno of alumnos">
+      <ion-label>
+        {{ alumno.nombre }} - 
+        <span [ngClass]="{'presente': alumno.presente, 'ausente': !alumno.presente}">
+          {{ alumno.presente ? 'Presente' : 'Ausente' }}
+        </span>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="volver()">Volver</ion-button>
+</ion-content>
+
+<style>
+  .presente {
+    color: green;
+  }
+  .ausente {
+    color: red;
+  }
+</style>

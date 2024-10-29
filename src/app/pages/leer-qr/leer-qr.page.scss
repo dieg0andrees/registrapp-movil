@@ -1,0 +1,49 @@
+.logo_duoc {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: flex-start;  /* Alinea la imagen en la parte superior */
+    height: 200px;            /* Ajusta la altura del contenedor */
+    padding-top: 20px;        /* Añade espacio desde la parte superior */
+  }
+  
+.logo_duoc img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.qr_imagen{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  height: 350px;
+}
+ion-range {
+  margin: 20px 0; /* Espacio superior e inferior */
+  --bar-height: 6px; /* Altura de la barra */
+  --color: #007bff; /* Color de la barra de zoom */
+  --start-label-color: #000; /* Color de la etiqueta de inicio */
+  --end-label-color: #000; /* Color de la etiqueta de fin */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ion-range .range-knob {
+  width: 50px; /* Tamaño del círculo */
+  height: 50px; /* Tamaño del círculo */
+  background-color: #007bff; /* Color del círculo */
+  border-radius: 50%; /* Forma circular */
+  border: 2px solid #fff; /* Borde blanco alrededor del círculo */
+}
+
+.volver-btn {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  --background: #007bff;
+  --color: #fff;
+}
+.botones_qr{
+  text-align: center;
+  align-items: center;
+}

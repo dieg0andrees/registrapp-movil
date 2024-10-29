@@ -1,0 +1,30 @@
+ion-content {
+    --background: #f2f2f2; /* Fondo suave */
+  }
+  
+  .logo_duoc img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+  }
+  
+  .asignatura-card {
+    margin-bottom: 15px; /* Espacio entre tarjetas */
+  }
+  
+  ion-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  ion-card-header {
+    background-color: #3880ff; /* Color de cabecera */
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Bordes superiores redondeados */
+  }
+  
+  .volver-btn {
+    --background: #3880ff; /* Botón de volver en azul */
+    --border-radius: 20px; /* Bordes del botón redondeados */
+  }
+  

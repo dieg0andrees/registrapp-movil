@@ -1,0 +1,31 @@
+<!-- mis-cursos.page.html -->
+<ion-content [fullscreen]="true">
+  <!-- Logo centrado -->
+  <div class="logo_duoc" style="text-align: center; margin-top: 20px;">
+    <img src="../../../assets/images/logo_duoc.png" alt="" style="max-width: 150px;">
+  </div>
+
+  <!-- Lista de asignaturas con encabezado -->
+  <ion-list style="margin-top: 30px;">
+    <ion-list-header style="text-align: center; font-weight: bold; font-size: 1.2em; color: #3880ff;">
+      Asignaturas
+    </ion-list-header>
+    
+    <!-- Asignaturas ordenadas en tarjetas -->
+    <div *ngFor="let asignatura of asignaturas" class="asignatura-card">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>% Asistencia: {{ asignatura.porcentajeAsistencia?.toFixed(2) ?? '0.00' }}%</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-list>
+
+  <!-- Botón de volver centrado -->
+  <ion-button class="volver-btn" expand="full" (click)="volver()" style="margin-top: 20px;">
+    Volver
+  </ion-button>
+</ion-content>

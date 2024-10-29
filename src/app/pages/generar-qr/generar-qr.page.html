@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <div class="logo_duoc">
+    <!-- Verifica que la ruta de la imagen sea correcta -->
+    <img src="/assets/images/logo_duoc.png" alt="Logo Duoc">
+  </div>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Todos los cursos</ion-label>
+    </ion-list-header>
+
+    <!-- Tarjetas de asignaturas -->
+    <div *ngFor="let asignatura of asignaturas" class="asignatura-card">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <div class="columna derecha">
+        <ion-card class="generarqr-card">
+          <ion-card-content>
+            <ion-button (click)="generarQr(asignatura.id, asignatura.nombre)">Generar QR</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+  </ion-list>
+
+  <ion-button class="volver-btn" (click)="volver()">
+    Volver
+  </ion-button>
+</ion-content>

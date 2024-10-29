@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div class="logo_duoc" style="text-align: center; margin-bottom: 20px;">
+    <img src="../../../assets/images/logo_duoc.png" alt="Logo Duoc" style="width: 150px;">
+  </div>
+
+  <div style="text-align: center;">
+    <qr-code 
+      [value]="qr" 
+      size="300" 
+      errorCorrectionLevel="M"></qr-code>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <ion-button class="volver-btn" (click)="volver()">
+      Finalizar Clase
+    </ion-button>
+
+    <ion-button class="estadoqr-btn" (click)="verEstadoQr()">
+      Estado QR
+    </ion-button>
+  </div>
+</ion-content>

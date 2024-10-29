@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { SplashPageRoutingModule } from './splash-routing.module';
+
+import { SplashPage } from './splash.page';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    SplashPageRoutingModule,
+    MatSlideToggleModule,
+    MatProgressBarModule,
+  ],
+  declarations: [SplashPage]
+})
+export class SplashPageModule {}

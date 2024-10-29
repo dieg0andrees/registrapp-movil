@@ -1,0 +1,93 @@
+/* Estilos para el contenido */
+
+.logo_duoc {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: flex-start;  /* Alinea la imagen en la parte superior */
+    height: 200px;            /* Ajusta la altura del contenedor */
+    padding-top: 20px;        /* Añade espacio desde la parte superior */
+  }
+  
+.logo_duoc img {
+    max-width: 250px;
+    height: auto;
+}
+
+ion-content {
+    --background: black; /* Color de fondo general */
+    padding: 1em;
+}
+
+/* Estilos del encabezado */
+ion-list-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #3880ff;
+    margin-bottom: 1.5em;
+}
+
+/* Tarjetas de asignaturas */
+.asignatura-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+    ion-card {
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        
+        ion-card-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        ion-card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        ion-card-content {
+            display: flex;
+            justify-content: center;
+
+            ion-button {
+                --background: #10dc60;
+                --color: white;
+                font-weight: bold;
+                padding: 0.5em 1em;
+
+                &:hover {
+                    --background: #0ab653;
+                }
+            }
+        }
+    }
+}
+
+/* Botón de volver */
+.volver-btn {
+    margin-top: 1em;
+    --background: #007bff;
+    --color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+
+    &:hover {
+        --background: #0056b3;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .asignatura-card {
+        ion-card {
+            width: 100%;
+        }
+    }
+}

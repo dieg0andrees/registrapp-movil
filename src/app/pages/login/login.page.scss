@@ -1,0 +1,27 @@
+.formulario_login{
+    margin-top: 125px;
+}
+
+.logo_duoc {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: flex-start;  /* Alinea la imagen en la parte superior */
+    height: 200px;            /* Ajusta la altura del contenedor */
+    padding-top: 20px;        /* Añade espacio desde la parte superior */
+  }
+  
+.logo_duoc img {
+    max-width: 250px;
+    height: auto;
+}
+.ingresar_boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;         
+    text-align: center;
+}
+
+.recuperar_contrasena{
+    margin-top: 10px;
+    padding-left: 15px;
+}

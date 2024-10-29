@@ -1,0 +1,78 @@
+.logo_duoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.logo_duoc img {
+    max-width: 250px;
+    height: auto;
+}
+
+ion-list-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las tarjetas */
+    flex: 1; /* Asegura que ambas columnas ocupen el mismo ancho */
+}
+
+.izquierda {
+    flex: 3; /* La columna de asignaturas toma más espacio */
+}
+
+.derecha {
+    flex: 1; /* La columna de asistencia toma menos espacio */
+}
+
+.asignatura-card,
+.asistencia-card {
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    padding: 10px; /* Espacio interno para que el contenido no esté pegado al borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efecto de profundidad */
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    flex: 1; /* Hace que todos los cuadros se estiren igual */
+}
+
+.asistencia-card {
+    background-color: #007bff; /* Color azul para asistencia */
+}
+
+.asistencia-card.bajo {
+    background-color: #ff0000; /* Rojo para asistencia menor al 70% */
+}
+
+.asignatura-card ion-card-content,
+.asistencia-card ion-card-content {
+    color: #fff; /* Color del texto en las tarjetas de asistencia (blanco) */
+}
+
+.volver-btn {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    --background: #007bff;
+    --color: #fff;
+}

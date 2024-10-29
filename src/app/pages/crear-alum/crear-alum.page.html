@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Crud del Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--Agregar-->
+  <div style="padding: 10px;" *ngIf="sw2">
+    <h2>Agregar Nuevo Alumno</h2>
+    <ion-input [(ngModel)]="nuevo_alumno.nombre" label="Nombre" placeholder="Ingrese nombre"></ion-input>
+    <ion-input [(ngModel)]="nuevo_alumno.apellido" label="Apellido" placeholder="Ingrese apellido"></ion-input>
+    <ion-input [(ngModel)]="nuevo_alumno.email" label="Email" placeholder="Ingrese Email"></ion-input>
+    <ion-input [(ngModel)]="nuevo_alumno.contrasena" label="Contraseña" placeholder="Ingrese Contraseña"></ion-input>
+
+    <ion-item>
+      <ion-label>Asignaturas</ion-label>
+      <ion-select multiple [(ngModel)]="nuevo_alumno.asignaturas">
+        <ion-select-option *ngFor="let asignatura of (asignaturas$ | async)" [value]="asignatura.id">
+          {{ asignatura.nombre }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button (click)="agregar_alumno()">Grabar</ion-button>
+  </div>
+
+  
+  <!-- Modificar -->
+  <div style="padding: 10px;" *ngIf="sw">
+    <h2>Modificar Alumno</h2>
+    <ion-input [(ngModel)]="alumno_mod.nombre" placeholder="Ingrese nombre"></ion-input>
+    <ion-input [(ngModel)]="alumno_mod.apellido" placeholder="Ingrese apellido"></ion-input>
+    <ion-input [(ngModel)]="alumno_mod.email" placeholder="Ingrese email"></ion-input>
+    <ion-input [(ngModel)]="alumno_mod.contrasena" placeholder="Ingrese Contraseña"></ion-input>
+
+    <ion-item>
+      <ion-label>Asignaturas</ion-label>
+      <ion-select multiple [(ngModel)]="alumno_mod.asignaturas">
+        <ion-select-option *ngFor="let asignatura of asignaturas$ | async" [value]="asignatura.id">
+          {{ asignatura.nombre }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button (click)="actualizar()">Actualizar</ion-button>
+    <ion-button (click)="cancelar()">Cancelar</ion-button>
+  </div>
+
+  <!-- Listado -->
+  <div style="padding: 10px;">
+    <ion-grid>
+      <ion-row *ngFor="let alumno of listado_alumno">
+        <ion-col>{{ alumno.nombre }} {{ alumno.apellido }}</ion-col>
+        <ion-col> 
+          <ion-button (click)="eliminarAlumno(alumno.id)">Borrar</ion-button>
+          <ion-button (click)="modificar(alumno)">Modificar</ion-button>
+        </ion-col>        
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-button (click)="volver()">Volver</ion-button>
+</ion-content>

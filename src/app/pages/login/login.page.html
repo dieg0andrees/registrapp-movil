@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Acceso a RegistrApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="formulario_login">
+    <div class="logo_duoc">
+      <img src="../../../assets/images/logo_duoc.png" alt="">
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="usuario" label="Nombre de Usuario" label-placement="floating" fill="solid" placeholder="Ingrese nombre de usuario"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="contrasena" label="Contraseña" label-placement="floating" fill="outline" type="password" placeholder="Ingrese contraseña"></ion-input>
+      </ion-item>
+
+      <div class="recuperar_contrasena">
+        <a [routerLink]="['/restablecer']">Restablecer contraseña</a>
+      </div>
+      
+      <div class="ingresar_boton">
+        <ion-button (click)="login()">
+          Ingresar
+        </ion-button>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

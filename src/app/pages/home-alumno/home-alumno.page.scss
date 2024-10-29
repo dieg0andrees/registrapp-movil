@@ -1,0 +1,95 @@
+.logo_duoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    padding-top: 20px;
+  }
+  
+  .logo_duoc img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Contenedor de temperatura centrado en una línea */
+  .temperature-container {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en línea horizontal */
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f8;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 320px; /* Aumenta el ancho para acomodar el texto */
+    margin: 0 auto; /* Centrado */
+    text-align: center;
+  
+    h2 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin: 0;
+      white-space: nowrap;
+    }
+  
+    .temperature-display {
+      font-size: 1.5em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+  
+      .temperature-icon {
+        font-size: 1.2em;
+      }
+  
+      &.hot {
+        color: #e63946;
+      }
+  
+      &.cold {
+        color: #1d3557;
+      }
+  
+      &:not(.hot):not(.cold) {
+        color: #007bff;
+      }
+    }
+  
+    .loading {
+      font-size: 1.2em;
+      color: #888;
+    }
+  }
+  
+.bienvenido_alumno {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bienvenido_alumno h3 {
+    font-size: 2rem; /* Tamaño moderado y elegante */
+    font-weight: 600; /* Texto seminegrita para formalidad */
+    color: #2c3e50;  /* Un color oscuro para un tono más sobrio */
+    margin-bottom: 10px;
+}
+
+.bienvenido_alumno .usuario {
+    color: #34495e;  /* Color oscuro uniforme con el texto */
+    font-weight: normal; /* Texto regular para el nombre */
+}
+
+.botones {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.botones ion-button {
+    --background: rgb(9, 0, 138);
+    width: 80%;
+    max-width: 300px;
+    font-size: 18px;
+}

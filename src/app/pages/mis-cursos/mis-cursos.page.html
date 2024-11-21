@@ -1,13 +1,13 @@
 <!-- mis-cursos.page.html -->
 <ion-content [fullscreen]="true">
   <!-- Logo centrado -->
-  <div class="logo_duoc" style="text-align: center; margin-top: 20px;">
-    <img src="../../../assets/images/logo_duoc.png" alt="" style="max-width: 150px;">
+  <div class="logo_duoc">
+    <img src="../../../assets/images/logo_duoc.png" alt="Logo DUOC">
   </div>
 
   <!-- Lista de asignaturas con encabezado -->
-  <ion-list style="margin-top: 30px;">
-    <ion-list-header style="text-align: center; font-weight: bold; font-size: 1.2em; color: #3880ff;">
+  <ion-list class="asignaturas-list">
+    <ion-list-header>
       Asignaturas
     </ion-list-header>
     
@@ -25,7 +25,7 @@
   </ion-list>
 
   <!-- Botón de volver centrado -->
-  <ion-button class="volver-btn" expand="full" (click)="volver()" style="margin-top: 20px;">
+  <ion-button class="volver-btn" expand="full" (click)="volver()">
     Volver
   </ion-button>
 </ion-content>

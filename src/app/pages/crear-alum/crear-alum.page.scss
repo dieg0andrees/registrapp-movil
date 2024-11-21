@@ -1,0 +1,86 @@
+// Variables
+$primary-color: #224b91;
+$secondary-color: #24779e;
+$background-color: #f8f9fa;
+$padding: 10px;
+
+// Estilos globales
+body {
+    background-color: $background-color;
+    font-family: Arial, sans-serif;
+}
+
+// Estilos para el header
+ion-header {
+    background-color: $primary-color;
+    ion-toolbar {
+        ion-title {
+            color: white;
+        }
+    }
+}
+
+// Contenido principal
+ion-content {
+    .logo_duoc {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .logo_duoc img {
+        max-width: 250px;
+        height: auto;
+    }
+    
+    padding: $padding;
+
+    h2 {
+        color: $primary-color;
+        margin: 5px 0 15px;
+        text-align: center;
+    }
+
+    ion-input {
+        margin-bottom: 15px;
+    }
+
+    ion-button {
+        margin-top: 10px;
+        background-color: $secondary-color;
+        color: white;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+
+    // Línea de separación
+    .separator {
+        border: none;
+        height: 2px;
+        background-color: #051531;
+        margin: 20px 0;
+    }
+
+    // Estilos para la lista de alumnos
+    ion-grid {
+        ion-row {
+            margin-bottom: 10px;
+
+            ion-col {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ion-button {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

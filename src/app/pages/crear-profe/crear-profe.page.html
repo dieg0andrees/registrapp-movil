@@ -1,10 +1,8 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Crud del Profesor</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <div class="logo_duoc">
+    <img src="../../../assets/images/logo_duoc.png" alt="">
+  </div>
+  <hr class="separator">
   <!-- Agregar -->
   <div style="padding: 10px;" *ngIf="sw2">
     <h2>Agregar Nuevo Profesor</h2>
@@ -24,7 +22,7 @@
 
     <ion-button (click)="agregar_profesor()">Grabar</ion-button>
   </div>
-
+  <hr class="separator">
   <!-- Modificar -->
   <div style="padding: 10px;" *ngIf="sw">
     <h2>Modificar Profesor</h2>
@@ -58,5 +56,6 @@
       </ion-row>
     </ion-grid>
   </div>
+  <hr class="separator">
   <ion-button (click)="volver()">Volver</ion-button>
 </ion-content>

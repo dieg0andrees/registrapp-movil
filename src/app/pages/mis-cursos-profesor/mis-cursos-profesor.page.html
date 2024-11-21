@@ -1,11 +1,9 @@
 <ion-content [fullscreen]="true">
   <!-- Encabezado -->
-  <div class="logo_duoc" style="text-align: center; margin-top: 20px;">
-    <img src="../../../assets/images/logo_duoc.png" alt="" style="max-width: 150px;">
+  <div class="logo_duoc">
+    <img src="../../../assets/images/logo_duoc.png" alt="">
   </div>
-  <ion-list-header style="text-align: center; font-weight: bold; font-size: 1.2em; color: #3880ff;">
-    Asignaturas que Enseñas
-  </ion-list-header>
+  <h2>Asignaturas que enseñas</h2>
 
   <!-- Tarjetas de asignaturas -->
   <div *ngFor="let asignatura of asignaturas" class="asignatura-card">

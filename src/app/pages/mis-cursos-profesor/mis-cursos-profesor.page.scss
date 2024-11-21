@@ -2,20 +2,26 @@
 
 .logo_duoc {
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: flex-start;  /* Alinea la imagen en la parte superior */
-    height: 200px;            /* Ajusta la altura del contenedor */
-    padding-top: 20px;        /* Añade espacio desde la parte superior */
-  }
-  
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 .logo_duoc img {
     max-width: 250px;
     height: auto;
 }
 
 ion-content {
-    --background: black; /* Color de fondo general */
+    --background: rgb(255, 255, 255); /* Color de fondo general */
     padding: 1em;
+    h2 {
+        color: #31a5f3;
+        margin: 5px 0 15px;
+        text-align: center;
+    }
 }
 
 /* Estilos del encabezado */
@@ -36,27 +42,29 @@ ion-list-header {
     ion-card {
         width: 100%;
         max-width: 600px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgb(247, 247, 247);
         border-radius: 8px;
         
         ion-card-header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: #474747;
+            color: rgb(182, 182, 182);
             padding: 1em;
             text-align: center;
         }
 
         ion-card-title {
+            color: white;
             font-size: 1.2em;
             font-weight: bold;
         }
 
         ion-card-content {
+            background-color: #919191cb;
             display: flex;
             justify-content: center;
 
             ion-button {
-                --background: #10dc60;
+                --background: #31a5f3;
                 --color: white;
                 font-weight: bold;
                 padding: 0.5em 1em;

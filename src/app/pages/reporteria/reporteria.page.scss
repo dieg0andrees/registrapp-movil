@@ -1,11 +1,12 @@
 .logo_duoc {
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: flex-start;  /* Alinea la imagen en la parte superior */
-    height: 200px;            /* Ajusta la altura del contenedor */
-    padding-top: 20px;        /* Añade espacio desde la parte superior */
-  }
-  
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 .logo_duoc img {
     max-width: 250px;
     height: auto;

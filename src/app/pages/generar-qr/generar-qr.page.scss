@@ -11,6 +11,10 @@
     height: auto;
 }
 
+ion-list {
+    padding: 0 15px;
+}
+
 ion-list-header {
     text-align: center;
     font-size: 1.5rem;
@@ -19,6 +23,9 @@ ion-list-header {
     margin-bottom: 20px;
 }
 
+.asignatura-card{
+    margin-bottom: 15px;
+}
 .contenedor {
     margin-top: 40px;
     display: flex;
